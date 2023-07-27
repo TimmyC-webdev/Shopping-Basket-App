@@ -79,13 +79,22 @@ main {
   margin-bottom: 1.4rem;
 }
 
+/*Media query*/
+
+@media only screen and (max-width: 758px) {
+  .item {
+    width: 100vw;
+    max-width: 100%;
+  }
+}
+
 .item:last-of-type {
   margin-bottom: 2rem;
 }
 
 .item input[type="checkbox"] {
   margin-right: 1rem;
-  margin-left: 2rem;
+  margin-left: 1ch;
 }
 
 input:checked {
