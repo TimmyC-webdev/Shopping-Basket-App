@@ -2,7 +2,7 @@
   "name": "shopping-basket",
   "version": "1.0.0",
   "description": "Shopping Basket App",
-  "main": "main.js",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html --dist-dir ./dist"
