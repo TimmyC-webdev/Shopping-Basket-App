@@ -35,7 +35,7 @@ main {
 
 .app {
   width: 100%;
-  max-width: 768px;
+  max-width: 90vw;
   background-color: var(--main-colour);
 }
 
