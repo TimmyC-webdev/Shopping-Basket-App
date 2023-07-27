@@ -1,0 +1,154 @@
+/*Project colour scheme*/
+
+:root {
+  --main-colour: #192841;
+  --font-colour: #fff;
+  --edit-btn-first: #ff5733;
+  --edit-btn-second: #39ff14;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "sans-serif";
+}
+
+button {
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--main-colour);
+  color: var(--font-colour);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+}
+
+.app {
+  width: 100%;
+  max-width: 768px;
+  background-color: var(--main-colour);
+}
+
+.app header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.app header h1 {
+  /*color: #36454f;*/
+  color: var(--font-colour);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.app header button {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#create {
+  color: var(--font-colour);
+  font-weight: 400;
+}
+.date {
+  color: var(--font-colour);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: auto;
+  padding: 0.9rem;
+  border-bottom: 1px solid #36454f;
+  background: none;
+  color: var(--font-colour);
+  margin-bottom: 1.4rem;
+}
+
+.item:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.item input[type="checkbox"] {
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+
+input:checked {
+  accent-color: var(--edit-btn-second);
+}
+
+.item input[type="text"] {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  color: var(--font-colour);
+  font-size: 20px;
+  flex: 1 1 0%;
+  margin-right: 1rem;
+}
+
+.item.complete {
+  opacity: 0.7;
+}
+
+.item.complete input[type="text"] {
+  text-decoration: line-through;
+}
+
+.item:hover,
+.item:focus-within {
+  background-color: #1c2e4a;
+}
+
+.actions button {
+  color: #39ff14;
+  margin-right: 1rem;
+  opacity: 0.8;
+  transform: 0.1s;
+}
+
+.actions button.remove-btn {
+  color: var(--edit-btn-first);
+  padding-right: 2rem;
+}
+
+.actions button:hover {
+  opacity: 1;
+}
+
+.actions button:last-of-type {
+  margin-right: 0;
+}
+
+.material-symbols-outlined {
+  margin: auto;
+  margin-top: 5rem;
+  color: var(--edit-btn-first);
+  font-size: 5rem;
+}
+
+.date {
+  padding-left: 3rem;
+  color: var(--font-colour);
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
