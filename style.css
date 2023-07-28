@@ -3,7 +3,7 @@
 :root {
   --main-colour: #192841;
   --font-colour: #fff;
-  --edit-btn-first: #ff5733;
+  --edit-btn-first: #fd571c;
   --edit-btn-second: #39ff14;
 }
 * {
@@ -62,14 +62,12 @@ main {
   color: var(--font-colour);
   font-weight: 400;
 }
-.date {
-  color: var(--font-colour);
-}
 
 .item {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   max-width: 80%;
   margin: auto;
   padding: 0.9rem;
@@ -149,8 +147,17 @@ input:checked {
 .material-symbols-outlined {
   margin: auto;
   margin-top: 5rem;
+  margin-bottom: 3rem;
   color: var(--edit-btn-first);
   font-size: 5rem;
+}
+
+/*MEDIA QUERY*/
+
+@media only screen and (max-width: 758px) {
+  .material-symbols-outlined {
+    font-size: 3rem;
+  }
 }
 
 .date {
@@ -158,6 +165,6 @@ input:checked {
   color: var(--font-colour);
   text-align: left;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-top: 2rem;
 }

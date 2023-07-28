@@ -24,10 +24,10 @@ function addGroceryItem() {
     complete: false,
   };
 
-  groceryList.unshift(item);
+  groceryList.push(item);
   const { item_el, input_el } = createGroceryEl(item);
 
-  list_el.prepend(item_el);
+  list_el.append(item_el);
 
   input_el.removeAttribute("disabled");
   input_el.focus();
