@@ -92,9 +92,11 @@ function createGroceryEl(item) {
   edit_btn_el.addEventListener("click", () => {
     input_el.removeAttribute("disabled");
     input_el.focus();
+    console.log(edit_btn_el);
   });
 
   remove_btn_el.addEventListener("click", () => {
+    groceryList = groceryList.filter((t) => t.id != item.id);
     item_el.remove();
 
     Save();
