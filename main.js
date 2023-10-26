@@ -96,7 +96,6 @@ function createGroceryEl(item) {
   });
 
   remove_btn_el.addEventListener("click", () => {
-    groceryList = groceryList.filter((t) => t.id != item.id);
     item_el.remove();
 
     Save();
